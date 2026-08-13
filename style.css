@@ -584,16 +584,23 @@ h1, h2, h3 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         padding: 15px 5%;
-        gap: 15px;
+        gap: 10px;
+    }
+
+    .logo {
+        order: 1;
     }
 
     .nav-cta {
+        order: 2;
         padding: 8px 12px;
         font-size: 12px;
     }
 
     .nav-links {
+        order: 3;
         width: 100%;
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -625,6 +632,11 @@ h1, h2, h3 {
         position: relative;
         top: 0;
         margin-bottom: 40px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 0px; /* Fix overlapping */
     }
 
     .hero-title {
