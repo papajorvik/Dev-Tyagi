@@ -10,12 +10,39 @@ const currentFrame = index => (
 const images = [];
 let loadedImages = 0;
 
+// Prevent scrolling while loading
+document.body.style.overflow = 'hidden';
+
+const loader = document.getElementById('loader');
+const loaderPercentage = document.getElementById('loader-percentage');
+const loaderBar = document.getElementById('loader-bar');
+
 const preloadImages = () => {
   for (let i = 1; i <= frameCount; i++) {
     const img = new Image();
     img.src = currentFrame(i);
     img.onload = () => {
         loadedImages++;
+        
+        // Update Loader UI
+        const percentage = Math.floor((loadedImages / frameCount) * 100);
+        if (loaderPercentage && loaderBar) {
+            loaderPercentage.innerText = `${percentage}%`;
+            loaderBar.style.width = `${percentage}%`;
+        }
+
+        // Hide loader when finished
+        if (loadedImages === frameCount) {
+            if (loader) {
+                loader.classList.add('fade-out');
+                setTimeout(() => {
+                    loader.style.display = 'none';
+                }, 500);
+            }
+            // Restore scrolling
+            document.body.style.overflow = 'auto';
+        }
+
         if(i === 1) {
             drawImageCover(context, img, canvas.width, canvas.height);
         }
