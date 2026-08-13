@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tyagi - Web Developer</title>
+    <!-- Import Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    
+    <!-- Fixed gradient fade at the bottom of the screen -->
+    <div class="bottom-fade"></div>
+
+    <div class="content-overlay">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">DEV TYAGI</div>
+            <div class="nav-links glass">
+                <a href="#about" class="active">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-primary nav-cta">Start a Project ↗</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <p class="subtitle">Available for opportunities</p>
+                <h1 class="hero-title">Dev Tyagi</h1>
+            </div>
+            
+            <!-- Left Info Card -->
+            <div class="info-card left-card glass">
+                <p class="stats-label">✦ 50+ Live Projects</p>
+                <h2>Building my way from Python fundamentals to real web projects.</h2>
+                <div class="card-actions">
+                    <a href="#contact" class="btn btn-primary">Get in touch ↗</a>
+                    <a href="#skills" class="link">View My Skills ↘</a>
+                </div>
+            </div>
+
+            <!-- Right Info Card -->
+            <div class="info-card right-card glass">
+                <div class="review-stats">
+                    <strong>150+</strong> Skills Mapped
+                </div>
+                <div class="review-stats" style="margin-bottom: 0;">
+                    <strong>24/7</strong> Server Uptime
+                </div>
+            </div>
+            <!-- Space for Cutout Image -->
+            <div class="hero-image-placeholder"></div>
+        </header>
+
+        <!-- Marquee -->
+        <section class="marquee-section">
+            <div class="marquee-content">
+                <span>✦ PYTHON FUNDAMENTALS</span>
+                <span>✦ WEB DEVELOPMENT</span>
+                <span>✦ GENERATIVE AI</span>
+                <span>✦ MINECRAFT SERVER ARCHITECT</span>
+                <span>✦ MOTION GRAPHICS</span>
+                <span>✦ PYTHON FUNDAMENTALS</span>
+                <span>✦ WEB DEVELOPMENT</span>
+                <span>✦ GENERATIVE AI</span>
+                <span>✦ MINECRAFT SERVER ARCHITECT</span>
+                <span>✦ MOTION GRAPHICS</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-label">
+                <span class="dot"></span> Who am I
+            </div>
+            <div class="about-text-container">
+                <p class="about-description">
+                    Hey, I'm Dev Tyagi. A student & aspiring developer who thinks differently under pressure — building my way from Python fundamentals to real web projects, one commit at a time.
+                </p>
+                <div class="about-actions">
+                    <a href="#contact" class="btn btn-primary">Start a Project ↗</a>
+                    <a href="#projects" class="link">View My Work ↘</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Logos -->
+        <section class="logos-section">
+            <div class="logos-container opacity-50">
+                <h3 class="logo-item">Vogue</h3>
+                <h3 class="logo-item">DIOR HOMME</h3>
+                <h3 class="logo-item">rogue.</h3>
+                <h3 class="logo-item">Perfect</h3>
+                <h3 class="logo-item">ED.PET</h3>
+                <h3 class="logo-item">Travol</h3>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="skills-header">
+                <p class="section-subtitle"><span class="dot"></span> What I do</p>
+                <h2 class="section-title">My Expertise</h2>
+            </div>
+            
+            <h3 style="margin: 20px 0 15px; font-size: 22px; color: var(--text-muted);">Core Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card glass">
+                    <h3>Python</h3>
+                    <p>Building a solid foundation in Python — syntax, logic, and problem solving.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Web Development</h3>
+                    <p>Improving my fundamentals to build real, functional websites.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Problem Solving</h3>
+                    <p>Breaking down complex problems and finding creative, workable solutions.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Video Editing</h3>
+                    <p>Intermediate editor with Premiere Pro & After Effects — visually compelling stories through motion.</p>
+                </div>
+            </div>
+
+            <h3 style="margin: 40px 0 15px; font-size: 22px; color: var(--text-muted);">Discord Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card glass">
+                    <h3>Server Developer</h3>
+                    <p>Building high-end Discord servers from scratch. My focus is on creating clean server layouts and smart structures.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Roles & Permissions</h3>
+                    <p>Setting up secure permission systems for busy Discord servers. I specialize in fixing role conflicts and locking down areas.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Bot Developer</h3>
+                    <p>Creating custom Discord bots to automate server tasks, build smart auto-responders, and manage roles.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Server Manager</h3>
+                    <p>Running and moderating live servers — keeping communities active, organized, and drama-free.</p>
+                </div>
+            </div>
+
+            <h3 style="margin: 40px 0 15px; font-size: 22px; color: var(--text-muted);">Other Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-card glass">
+                    <h3>Graphic Designing</h3>
+                    <p>Handling practical graphic designing to support my own projects and tasks. I create clean visuals like server banners and logos.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Generative AI</h3>
+                    <p>Utilizing Generative AI tools to speed up workflow and create quick content. I write smart prompts to generate high-quality assets.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Motion Graphics</h3>
+                    <p>Integrating motion graphics in video editing using Adobe After Effects to make content highly engaging.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Telegram Bots</h3>
+                    <p>Building custom Telegram bots from scratch using Python. Developing smart commands and automated response systems.</p>
+                </div>
+                <div class="skill-card glass">
+                    <h3>Minecraft Server Architect</h3>
+                    <p>Configured and deployed multi-world Minecraft server networks, managing permissions and optimizing performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="projects-header">
+                <p class="section-subtitle"><span class="dot red"></span> cd ./projects</p>
+                <h2 class="section-title">Selected Work</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="images/weather.png" alt="Weather App" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather App</h3>
+                        <p>A real-time weather application that fetches live weather data for any city. Clean UI, live data, fully functional.</p>
+                        <span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">Weather API</span>
+                        <div style="margin-top: 15px;">
+                            <a href="https://weather-app-zeta-lyart-28.vercel.app" target="_blank" class="btn btn-primary">Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card mt-large">
+                    <div class="project-image-wrapper">
+                        <img src="images/qrgen.png" alt="QR Code Maker" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>QR Code Maker</h3>
+                        <p>A web application that instantly converts any text or uploaded image into a high-quality, shareable QR code.</p>
+                        <span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">Image Upload API</span>
+                        <div style="margin-top: 15px;">
+                            <a href="https://qr-gen-jet.vercel.app/" target="_blank" class="btn btn-primary">Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="images/taskflow.png" alt="Task Flow" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Flow</h3>
+                        <p>A web application that instantly organises your daily tasks and to-do lists into a clean, trackable dashboard.</p>
+                        <span class="tag">Database</span>
+                        <span class="tag">Login System</span>
+                        <div style="margin-top: 15px;">
+                            <a href="https://taskflow-ztg9.vercel.app/" target="_blank" class="btn btn-primary">Live Demo ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Works Section -->
+        <section id="other-works" class="projects-section">
+            <div class="projects-header">
+                <p class="section-subtitle"><span class="dot red"></span> ls ./other-works</p>
+                <h2 class="section-title">Other Works</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="images/design_work.jpg" alt="Design Works" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>My Design Works</h3>
+                        <p>A collection of graphic design work — thumbnails, posters, and UI mockups. Full gallery available on Google Drive.</p>
+                        <span class="tag">Photoshop</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Canva</span>
+                        <div style="margin-top: 15px;">
+                            <a href="https://drive.google.com/file/d/18q_3VTG0fbi8hStUW8issNwMWQpncp61/view?usp=sharing" target="_blank" class="btn btn-primary">View on Drive ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card mt-large">
+                    <div class="project-image-wrapper">
+                        <img src="images/discord.jpg" alt="Discord Server" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>My Discord Server</h3>
+                        <p>A Discord server I built and manage from scratch — channels, roles, permissions, and moderation, all set up and running live.</p>
+                        <span class="tag">Server Setup</span>
+                        <span class="tag">Moderation</span>
+                        <div style="margin-top: 15px;">
+                            <a href="https://discord.gg/qBBkJEvYF6" target="_blank" class="btn btn-primary">Join Server ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="testimonials-header">
+                <p class="section-subtitle"><span class="dot red"></span> Client Feedback</p>
+                <h2 class="section-title">What They Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass">
+                    <p class="quote">"Dev transformed our outdated website into a modern masterpiece. His attention to detail and design sense is unparalleled."</p>
+                    <div class="author">
+                        <strong>Alexander</strong>
+                        <span>Law Partner</span>
+                    </div>
+                </div>
+                <div class="testimonial-card glass">
+                    <p class="quote">"Working with Dev was a breeze. He delivered the project ahead of schedule and the results exceeded all our expectations."</p>
+                    <div class="author">
+                        <strong>Sarah Jenkins</strong>
+                        <span>CEO, KeyPharma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer Section -->
+        <footer id="contact" class="site-footer">
+            <div class="footer-content glass">
+                <h2>Let's Connect</h2>
+                <p>Have an idea, opportunity, or just want to say hi? I'd love to hear from you!</p>
+                <div class="footer-actions">
+                    <a href="mailto:devtyagi1020@gmail.com" class="btn btn-primary">devtyagi1020@gmail.com ↗</a>
+                </div>
+                <div class="footer-links" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://t.me/thecyberdaddy" target="_blank" class="btn btn-primary" style="background: transparent; color: var(--text-main); border-color: var(--glass-border);">Telegram ↗</a>
+                    <a href="https://instagram.com/papajorvik" target="_blank" class="btn btn-primary" style="background: transparent; color: var(--text-main); border-color: var(--glass-border);">Instagram ↗</a>
+                    <a href="javascript:void(0)" id="discordCard" class="btn btn-primary" style="background: transparent; color: var(--text-main); border-color: var(--glass-border);">Discord (copy) 📋</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dev Tyagi. All rights reserved.</p>
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Toast Notification for Discord Copy -->
+    <div id="toast" class="toast">Copied Discord Username!</div>
+
+    <script src="script.js"></script>
+    <script>
+        // Discord Copy Logic
+        const discordCard = document.getElementById("discordCard");
+        const toast = document.getElementById("toast");
+        if (discordCard && toast) {
+            discordCard.addEventListener("click", (e) => {
+                e.preventDefault();
+                navigator.clipboard.writeText("papajorvik").catch(() => {});
+                toast.classList.add("show");
+                setTimeout(() => {
+                    toast.classList.remove("show");
+                }, 1800);
+            });
+        }
+    </script>
+</body>
+</html>
