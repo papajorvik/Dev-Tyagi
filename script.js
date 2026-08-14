@@ -20,7 +20,6 @@ const loaderBar = document.getElementById('loader-bar');
 const preloadImages = () => {
   for (let i = 1; i <= frameCount; i++) {
     const img = new Image();
-    img.src = currentFrame(i);
     const handleLoad = () => {
         loadedImages++;
         
@@ -55,6 +54,8 @@ const preloadImages = () => {
         console.error(`Failed to load frame ${i}`);
         handleLoad();
     };
+
+    img.src = currentFrame(i);
     images[i] = img;
   }
 };
