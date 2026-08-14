@@ -21,7 +21,7 @@ const preloadImages = () => {
   for (let i = 1; i <= frameCount; i++) {
     const img = new Image();
     img.src = currentFrame(i);
-    img.onload = () => {
+    const handleLoad = () => {
         loadedImages++;
         
         // Update Loader UI
@@ -42,11 +42,19 @@ const preloadImages = () => {
             // Restore scrolling
             document.body.style.overflow = 'auto';
         }
+    };
 
+    img.onload = () => {
+        handleLoad();
         if(i === 1) {
             drawImageCover(context, img, canvas.width, canvas.height);
         }
-    }
+    };
+
+    img.onerror = () => {
+        console.error(`Failed to load frame ${i}`);
+        handleLoad();
+    };
     images[i] = img;
   }
 };
@@ -55,7 +63,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 function drawImageCover(ctx, img, canvasWidth, canvasHeight) {
-    if (!img || !img.complete) return;
+    if (!img || !img.complete || img.naturalWidth === 0) return;
     
     const imgRatio = img.width / img.height;
     const canvasRatio = canvasWidth / canvasHeight;
